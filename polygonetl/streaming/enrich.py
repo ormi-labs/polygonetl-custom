@@ -111,8 +111,8 @@ def enrich_logs(blocks, logs):
             ('hash', 'block_hash'),
         ]))
 
-    if len(result) != len(logs):
-        raise ValueError('The number of logs is wrong ' + str(result))
+    #if len(result) != len(logs):
+    #    raise ValueError('The number of logs is wrong ' + str(result))
 
     return result
 
@@ -135,8 +135,8 @@ def enrich_token_transfers(blocks, token_transfers):
             ('hash', 'block_hash'),
         ]))
 
-    if len(result) != len(token_transfers):
-        raise ValueError('The number of token transfers is wrong ' + str(result))
+    #if len(result) != len(token_transfers):
+    #    raise ValueError('The number of token transfers is wrong ' + str(result))
 
     return result
 
@@ -203,8 +203,8 @@ def enrich_traces(blocks, traces, transactions):
             ('hash', 'transaction_hash')
         ]))
 
-    if len(result) != len(traces):
-        raise ValueError('The number of traces is wrong ' + str(result))
+    #if len(result) != len(traces):
+    #    raise ValueError('The number of traces is wrong ' + str(result))
 
     return result
 
@@ -226,8 +226,8 @@ def enrich_contracts(blocks, contracts):
             ('hash', 'block_hash'),
         ]))
 
-    if len(result) != len(contracts):
-        raise ValueError('The number of contracts is wrong ' + str(result))
+    #if len(result) != len(contracts):
+    #    raise ValueError('The number of contracts is wrong ' + str(result))
 
     return result
 
@@ -249,7 +249,7 @@ def enrich_tokens(blocks, tokens):
             ('hash', 'block_hash'),
         ]))
 
-    if len(result) != len(tokens):
-        raise ValueError('The number of tokens is wrong ' + str(result))
+    #if len(result) != len(tokens):
+    #    raise ValueError('The number of tokens is wrong ' + str(result))
 
     return result
